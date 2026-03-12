@@ -22,15 +22,24 @@ pip install -r requirements.txt
 7) bash~
 python -m pip freeze > requirements.txt
 
-#Código
-from flask import Flask
-app = Flask(__name__)
-@app.route("/")
-def home():
-    return "olá"
+import psycopg2
 
-if __name__ == "__main__":
-    app.run(debug=True)
+try:
+    conexao = psycopg2.connect(
+        host="git.inetz.com.br",
+        port=5432,
+        user="appuser",
+        password="appsenha",
+        dbname="appdb"
+    )
+
+    print("Conectado ao banco de dados PostgreSQL!")
+
+    conexao.close()
+
+except Exception as erro:
+    print("Erro ao conectar ao banco de dados:")
+    print(erro)
 
 8) bash~:
 python app.py
