@@ -1,6 +1,6 @@
 EDUARDO LAZARO ROESLER DE OLIVEIRA <eduardooliveira01@prof.educacao.sp.gov.br>	11 de março de 2026 às 19:13
 Para: Adriano Justino Rosa <adrianorosa02@prof.educacao.sp.gov.br>
-
+```
 1) Command Prompt:
 "C:\Program Files\Python313\"python --version
 
@@ -38,6 +38,7 @@ python app.py
 
 8.5) Devemos criar o banco:
 create database / create table usuarios
+```
 
 9) Atualizar código:
 import mysql.connector
